@@ -1,2 +1,4 @@
-# mkdocs
-sphinx repository
+# 简介
+=========================
+`'达观杯'文本智能处理挑战赛官网 <http://www.pkbigdata.com/common/cmpt/>`
+该库用于达观杯比赛任务的代码实现，主要包括svm与xgboost的算法测试，需要经过调参以达到更优。
