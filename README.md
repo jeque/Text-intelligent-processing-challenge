@@ -4,7 +4,7 @@
 该库用于达观杯比赛任务的代码实现研究，主要利用机器学习sklearn包实现，运用了特征工程和分类器。 特征工程部分主要针对文本分类任务的 hash/lsa/lda/doc2vec特征提取/特征选择/特征组合/特征构造进行了实现，而分类器部分主要有逻辑回归/SVM/随机森林/Bagging/Adaboost/GBDT/Xgboost/LightGBM等。该库需要经过调参以达到更优。<br>
 # 1 特征工程
 - 生成tfidf特征<br>
-
+  * 存放于features文件夹，运行里面的tfidf.py；
 - 生成lsa特征<br>
 
 - 生成lda特征<br>
