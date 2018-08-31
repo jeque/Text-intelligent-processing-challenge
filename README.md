@@ -6,6 +6,7 @@
 - 生成tf特征<br>
   * 运行`tf.py`生成tf特征；<br>
 - 生成lda特征<br>
+  * 运行`lda.py`将tf特征降维为lda特征；<br>
 ________________________________
 - 生成tfidf特征<br>
   * 存放于features文件夹，运行里面的`tfidf.py`生成tfidf特征；<br>
@@ -19,7 +20,7 @@ ________________________________
      vectorizer = TfidfVectorizer(ngram_range=(1, 2), min_df=6, max_df=0.9, use_idf=1, smooth_idf=1, sublinear_tf=1)
      ```
 - 生成lsa特征<br>
-
+  * 运行`lds.py`将tfidf特征降维为lds特征；<br>
 
 # 2 分类器算法
 - 使用逻辑回归分类器进行训练<br>
