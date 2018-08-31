@@ -20,7 +20,7 @@ ________________________________
      vectorizer = TfidfVectorizer(ngram_range=(1, 2), min_df=6, max_df=0.9, use_idf=1, smooth_idf=1, sublinear_tf=1)
      ```
 - 生成lsa特征<br>
-  * 运行`lds.py`将tfidf特征降维为lds特征；<br>
+  * 运行`lsa.py`将tfidf特征降维为lsa特征；<br>
 ________________________________
 - 构造特征<br>
   * 运行`feature_construct.py`,根据已有的特征，使用多项式方法构造出更多特征；<br>
