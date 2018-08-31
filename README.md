@@ -5,7 +5,14 @@
 # 1 特征工程
 - 生成tfidf特征<br>
   * 存放于features文件夹，运行里面的`tfidf.py`生成tfidf特征；
+   * 差异代码如下：<br>
+     ```Python
+     vectorizer = TfidfVectorizer(ngram_range=(1, 2), min_df=3, max_df=0.9, sublinear_tf=True)
+     ```
   * 运行features文件夹中的`tfidfpro.py`生成新的tfidf特征；（这两种选择其中一种作为下一步的特征基础）
+     ```Python
+     vectorizer = TfidfVectorizer(ngram_range=(1, 2), min_df=6, max_df=0.9, use_idf=1, smooth_idf=1, sublinear_tf=1)
+     ```
 - 生成lsa特征<br>
 
 - 生成lda特征<br>
