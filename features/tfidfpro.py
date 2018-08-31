@@ -32,7 +32,7 @@ x_test = vectorizer.transform(df_test['word_seg'])
 3 保存至本地
 """
 data = (x_train, y_train, x_test)
-fp = open('./data_tfidf.pkl', 'wb')
+fp = open('./data_tfidfpro.pkl', 'wb')
 pickle.dump(data, fp)
 fp.close()
 
