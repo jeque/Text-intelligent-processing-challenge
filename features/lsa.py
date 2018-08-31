@@ -10,7 +10,7 @@ import time
 t_start = time.time()
 
 """读取tfidf特征"""
-tfidf_path = './data_tfidf_selected_lsvc_l2_143w.pkl'
+tfidf_path = './data_tfidf.pkl'
 f_tfidf = open(tfidf_path, 'rb')
 x_train, y_train, x_test = pickle.load(f_tfidf)
 f_tfidf.close()
@@ -23,7 +23,7 @@ x_test = lsa.transform(x_test)
 
 """将lsa特征保存至本地"""
 data = (x_train, y_train, x_test)
-f_data = open('./data_s_lsvc_l2_143w_lsa.pkl', 'wb')
+f_data = open('./data_tfidf_lsa.pkl', 'wb')
 pickle.dump(data, f_data)
 f_data.close()
 
