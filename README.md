@@ -19,14 +19,14 @@ ________________________________
      vectorizer = TfidfVectorizer(ngram_range=(1, 2), min_df=3, max_df=0.9, sublinear_tf=True)
      ```
   >进行特征选择：<br>
-		运行`ensemble_select.py`对特征进行嵌入式选择；<br>
+	```运行`ensemble_select.py`对特征进行嵌入式选择；```
   * 运行features文件夹中的`tfidfpro.py`生成新的tfidf特征；（这两种选择其中一种作为下一步的特征基础）<br>
   >差异代码如下：<br>
      ```Python
      vectorizer = TfidfVectorizer(ngram_range=(1, 2), min_df=6, max_df=0.9, use_idf=1, smooth_idf=1, sublinear_tf=1)
      ```
   >进行特征选择：<br>
-		运行`ensemble_select.py`对特征进行嵌入式选择；<br>
+	 ```运行`ensemble_select.py`对特征进行嵌入式选择；```
 - 生成lsa特征: <br>
   * 运行`lsa.py`将tfidf特征降维为lsa特征；<br>
 ________________________________
