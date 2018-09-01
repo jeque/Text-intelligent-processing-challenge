@@ -34,7 +34,7 @@ ________________________________
   * 运行`ensemble.py`将lda/lsa/doc2vec三种特征进行特征融合；<br>
 
 - 转化为稀疏矩阵: <br>
-  *运行`ensemble_sparse.py`将ensemble特征转化为稀疏矩阵；<br>  
+  * 运行`ensemble_sparse.py`将ensemble特征转化为稀疏矩阵；<br>  
 ________________________________
 - 构造特征<br>
   * 运行`feature_construct.py`,根据已有的特征，使用多项式方法构造出更多特征；<br>
