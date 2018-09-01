@@ -13,7 +13,7 @@ df_train.drop(columns=['article', 'id'], inplace=True)
 df_test.drop(columns=['article'], inplace=True)
 
 print("特征分析...")
-vectorizer = TfidfVectorizer(ngram_range=(1, 2), min_df=3, max_df=0.9, max_features=100000)
+vectorizer = TfidfVectorizer(ngram_range=(1, 2), min_df=6, max_df=0.9, use_idf=1, smooth_idf=1, sublinear_tf=1)
 vectorizer.fit(df_train['word_seg'])
 x_train = vectorizer.transform(df_train['word_seg'])
 x_test = vectorizer.transform(df_test['word_seg'])
