@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+@brief : 运用tfidf特征及SVM算法对机器学习模型进行训练，并对测试集进行预测
+@author: jeque
+"""
+
 print("开始............")
 import time
 import pandas as pd
@@ -19,7 +25,7 @@ x_train = vectorizer.transform(df_train['word_seg'])
 x_test = vectorizer.transform(df_test['word_seg'])
 y_train = (df_train['class']-1).astype(int)
 
-print("[2] SVM分析...")
+print("[2] SVM算法...")
 lin_clf = svm.LinearSVC(multi_class='ovr', fit_intercept=True, intercept_scaling=1)
 lin_clf.fit(x_train, y_train)
 preds = lin_clf.predict(x_test)
