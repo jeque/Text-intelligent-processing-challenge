@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 @brief : lda/lsa/doc2vec三种特征进行特征融合，并将结果保存至本地
-@author: Jian
+@author: jeque
 """
 import numpy as np
 import pickle
@@ -16,7 +16,7 @@ f1 = open('./data_lda.pkl', 'rb')
 x_train_1, y_train, x_test_1 = pickle.load(f1)
 f1.close()
 
-f2 = open('./data_s_lsvc_l2_143w_lsa.pkl', 'rb')
+f2 = open('./data_tfidf_lsa.pkl', 'rb')
 x_train_2, y_train, x_test_2 = pickle.load(f2)
 f2.close()
 

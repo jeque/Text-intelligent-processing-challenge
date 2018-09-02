@@ -14,7 +14,7 @@ import lightgbm as lgb
 status_vali = True
 
 """特征存储的路径"""
-features_path = 'data_ensemble_spar.pkl'
+features_path = 'data_ensemble_sparnew.pkl'
 
 """修改clf_name可对学习算法进行选择；修改base_clf改变集成学习的基分类器"""
 clf_name = 'svm'
@@ -23,7 +23,7 @@ base_clf = LinearSVC()
 
 clfs = {
     'lr': LogisticRegression(penalty='l2', C=1.0),
-    'svm': LinearSVC(penalty='l2', dual=True),
+    'svm': LinearSVC(multi_class='ovr', fit_intercept=True, intercept_scaling=1),
     'bagging': BaggingClassifier(base_estimator=base_clf, n_estimators=60, max_samples=1.0, max_features=1.0, random_state=1,
                         n_jobs=1, verbose=1),
     'rf': RandomForestClassifier(n_estimators=10, criterion='gini'),

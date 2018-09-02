@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 @brief : 将原始数据数字化为tf特征，并将结果保存至本地
-@author: Jian
+@author: jeque
 """
 import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer

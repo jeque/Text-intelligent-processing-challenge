@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 @brief : 将tfidf特征降维为lsa特征，并将结果保存至本地
-@author: Jian
+@author: jeque
 """
 from sklearn.decomposition import TruncatedSVD
 import pickle

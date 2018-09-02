@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 @brief : 将tf特征降维为lda特征，并将结果保存至本地
-@author: Jian
+@author: jeque
 """
 from sklearn.decomposition import LatentDirichletAllocation
 import pickle
@@ -12,7 +12,7 @@ t_start = time.time()
 """=====================================================================================================================
 1 tf特征加载
 """
-tf_path = './tf_select_LSVC_l2644235.pkl'
+tf_path = './data_tf.pkl'
 f_tf = open(tf_path, 'rb')
 x_train, y_train, x_test = pickle.load(f_tf)
 f_tf.close()

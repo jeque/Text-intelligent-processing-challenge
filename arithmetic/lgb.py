@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 @brief : lgb算法
-@author: Jian
+@author: jeque
 """
 import numpy as np
 import pandas as pd
